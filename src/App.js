@@ -112,9 +112,9 @@ const App = () => {
   }, [formValues])
   return (
     <div className='container'>
-      <header><h1>Lambda Eats!</h1></header>
+      <header><h1>Lambda Eat!</h1></header>
       <nav>
-        <h1 className='pizza-header'>Pizza&apos;s power</h1>
+        <h1 className='pizza-header'>Pizza&apos;s Pizza</h1>
         <div className='nav-links'>
           {/*  Make Links to navigate us Home (`/`) and Shop (`/PizzaForm`) */}
           <Link to="/">Home</Link>

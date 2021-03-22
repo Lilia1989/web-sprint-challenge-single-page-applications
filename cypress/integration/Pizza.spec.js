@@ -21,8 +21,8 @@ describe('Test App',()=>{
       it('it can type inside the input',() => {
         nameinput()
         .should('have.value','')
-        .type('Yonathan')
-        .should('have.value','Yonathan')
+        .type('lilia')
+        .should('have.value','lilia')
         specialInstructions()
         .should('have.value','')
         .type('admyoni4@yahoo.com')
@@ -34,18 +34,17 @@ describe('Test App',()=>{
       })
       describe('the submit btn enables when all inputs filled and Agreed on terms', () => {
           it('it can submit and delete', () =>{
-            cy.contains(/yon.O@gmail.com/).should('not.exist')
-            nameinput().type('yon')
-            emailInput().type('yon.O@gmail.com')
-            passwordInput().type('1234Lily')
-            termsOfservice().check('Agree')
+            cy.contains(/dgfdgksfksgfksGFSGFKSGFSFFGSFJSFS/).should('not.exist')
+            nameinput().type('lilia')
+            specialInstructions().type('dgfdgksfksgfksGFSGFKSGFSFFGSFJSFS')
+            
+            Toppings().check()
             //cy.get('[disabled]').click({force: true})
             //submitBtn().should('not.be.disabled')
             submitBtn().click()
-            cy.contains(/yon.O@gmail.com/).should('exist')
+            cy.contains(/dgfdgksfksgfksGFSGFKSGFSFFGSFJSFS/).should('exist')
             //submitBtn().should('be.disabled')
       })
     })
     })
   })
-  
